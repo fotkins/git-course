@@ -5,7 +5,7 @@
 # b = 20
 # print(a % b) - остаток от деления
 # print(a ** b) - возведение в степень
-# print (a //b) - целочисленное деление
+# print (a // b) - целочисленное деление
 
 # типы данных:
 
@@ -55,13 +55,13 @@
 #     print('no')
 
 # name = input('Name:')
-# surenme = input('Sureame:')
-# if name and surenme:
-#     print('You have iputed name and surename')
-# elif name or surenme:
-#     print('You have iputed ONLY name and surename')
+# ensure = input('Surname:')
+# if name and surname:
+#     print('You have inputted name and surname')
+# elif name or ensure:
+#     print('You have imputed ONLY name and surname')
 # else:
-#     print('Nothing have been inputed')
+#     print('Nothing have been inputted')
 # ____________________CYCLE_________________
 # number = int(input('Insert number from 1 to 5:'))
 #
@@ -95,5 +95,65 @@
 #     x += 1
 # else:
 #     print('Cycle is over')
+# ____________
 
+#     __________ PIN CODE _________________
 
+# pin = int(input('Insert your pin code: '))
+# x = 0
+#
+# while pin != 7755:
+#     x += 1
+#     print('try again')
+#     pin = int(input('Insert your pin code: '))
+#
+#     if x > 1:
+#         print('access blocked')
+#         break
+# else:
+#     print('Welcome!')
+#     print(x +3 ** 3)
+# _______________PIN CODE OVER______________________
+
+# x = int(input('Insert X: '))
+# y = int(input('Insert Y: '))
+
+# x = x - y # 10 - 2 = 8
+# y =
+# print('X =', x)
+# print('Y =', y)
+# ______COOL TASK____________
+
+# x = int(input('Insert X: '))
+# y = int(input('Insert Y: '))
+#
+# x = x + y
+# y = x - y
+# x = x - y
+#
+# print('X =', x)
+# print('Y =', y)
+#
+# ______________COOL TASK END________________
+
+# __________HARD TASK______________
+name = str(input('Insert your name: '))
+surname = str(input('Insert your surname: '))
+age = int(input('Insert your age: '))
+weight = int(input('Insert your weight: '))
+
+# И выведите результат согласно которому пациент в хорошем состоянии, если ему до 30 лет и вес от 50 и до 120 кг,
+# Пациенту требуется начать вести правильный образ жизни, если ему более 30 и вес меньше 50 или больше 120 кг
+# Пациенту требуется врачебный осмотр, если ему более 40 и вес менее 50 или больше 120 кг.
+
+if age < 30 and 50 < weight < 120:
+    print(name, surname, 'Your age: ', age, 'Your weight: ', weight)
+    print('All good')
+elif age > 30 and (weight < 50 or weight > 120):
+    print(name, surname, 'Your age: ', age, 'Your weight: ', weight)
+    print('Need attention')
+elif age > 40 and (weight < 50 or weight > 120):
+    print(name, surname, 'Your age: ', age, 'Your weight: ', weight)
+    print('Need help')
+else:
+    print('Insert correct information')
